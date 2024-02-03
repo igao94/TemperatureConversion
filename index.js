@@ -4,7 +4,7 @@ const toCelsius = document.getElementById("toCelsius");
 const result = document.getElementById("result");
 let temp;
 
-function convert() {
+const convert = () => {
   if (toFahrenheit.checked) {
     temp = Number(textBox.value);
     temp = (temp * 9) / 5 + 32;
@@ -16,4 +16,4 @@ function convert() {
   } else {
     result.textContent = "Select a unit!";
   }
-}
+};
